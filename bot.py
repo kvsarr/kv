@@ -27,7 +27,7 @@ client = MongoClient(MONGO_URI, tlsCAFile=certifi.where())
 db = client['rishi']
 users_collection = db.users
 
-bot = telebot.TeleBot(7426988455:AAE98IwF7XosxU0h7ThvhROJofgkx_822Qo)
+bot = telebot.TeleBot(TOKEN)
 REQUEST_INTERVAL = 1
 
 def is_user_admin(user_id, chat_id):
