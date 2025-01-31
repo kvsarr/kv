@@ -15,7 +15,7 @@ from threading import Thread
 loop = asyncio.get_event_loop()
 
 TOKEN = os.getenv("7426988455:AAE98IwF7XosxU0h7ThvhROJofgkx_822Qo")
-MONGO_URI = os.getenv("MONGODB_URI")
+MONGO_URI = os.getenv("mongodb+srv://rishi:ipxkingyt@rishiv.ncljp.mongodb.net/?retryWrites=true&w=majority&appName=rishiv")
 
 FORWARD_CHANNEL_ID = -1002151295220
 CHANNEL_ID = -1002151295220
@@ -27,7 +27,7 @@ client = MongoClient(MONGO_URI, tlsCAFile=certifi.where())
 db = client['rishi']
 users_collection = db.users
 
-bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot(7426988455:AAE98IwF7XosxU0h7ThvhROJofgkx_822Qo)
 REQUEST_INTERVAL = 1
 
 def is_user_admin(user_id, chat_id):
